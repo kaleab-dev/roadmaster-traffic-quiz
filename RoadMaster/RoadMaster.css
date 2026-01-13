@@ -1,0 +1,336 @@
+body{
+    background-color: rgb(70, 70, 231);
+     font-size: clamp(14px, 2.5vw, 16px);
+}
+.container{
+background-color: rgb(255, 255, 255);
+width: 95%;
+max-width: 1000px;
+min-height: 90vh;
+margin: 1rem auto;
+padding: 1rem;
+border-radius: 10px;
+
+}
+/*questions*/
+
+.question-container{
+  margin-top: 20px;
+  text-align: center;
+}
+.qs{
+  font-size: 20px;
+}
+.imgq{
+  padding:7px;
+  width:70px;
+  height: 70px;
+}
+.imgq-container {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+
+
+
+
+
+
+
+/*answers*/
+.imganswer-container {
+  margin-top: 0.7%;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  row-gap: 30px;
+  column-gap: 120px;
+  justify-content: center; 
+}
+.textanswer-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ansimg{
+  width: 65px;
+  height: 65px;
+  pointer-events: none; 
+}
+
+.ansbtnimg {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid rgb(100, 98, 98);
+  border-radius: 3px;
+  background-color: aliceblue;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.ansbtnimg:hover{
+  cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(70, 70, 231);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.ansbtntext{
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    min-height: 44px;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.2rem;
+    border: 0.1rem solid rgb(100, 98, 98);
+    border-radius: 3px;
+    background-color: aliceblue;
+    padding: 15px 15px;
+    font-size: medium;
+    
+   
+}
+.ansbtntext:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(70, 70, 231);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.ansbtn-correct{
+    display: flex;
+    border: 0.1rem solid rgb(191, 255, 203);
+    border-radius: 3px;
+    background-color: aliceblue;
+    box-shadow: 0 0.1rem 0.3rem 0 rgb(194, 255, 205);
+   
+}
+.ansbtn-wrong{
+    border: 0.1rem solid rgb(255, 124, 124);
+    border-radius: 3px;
+    background-color: aliceblue;
+    box-shadow: 0 0.1rem 0.3rem 0 rgb(255, 124, 124);
+}
+.ansbtntext:disabled, .ansbtnimg:disabled{
+  opacity: 1 !important;   
+  filter: none !important;
+  -webkit-filter: none !important;
+  -webkit-text-fill-color: currentColor;           
+  cursor: default;         
+}
+.ansbtntext:disabled:hover, .ansbtnimg:disabled:hover{
+  transition: none;    
+  transition: none;
+  box-shadow: none;
+}
+.ansbtn-correct {
+  border: 3px solid #4CAF50;
+  color: #4CAF50;
+}
+
+.ansbtn-wrong {
+  border: 3px solid #f44336;
+  color: #f44336;
+}
+
+
+
+
+/*next and previous buttons*/
+.nxtbtn{
+  font-size: 1.0rem;
+  padding:7px;
+  margin-left:20px ;
+  background-color:rgb(255, 255, 255);
+  border: 1.5px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.nxtbtn:hover{
+  border-color: rgb(70, 70, 231);
+  background-color: rgb(93, 93, 93);
+  color: azure;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.prvbtn{
+  font-size: 1.0rem;
+  padding:5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color:rgb(255, 255, 255);
+  border: 1.5px solid black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.prvbtn:hover{
+  border-color: rgb(70, 70, 231);
+  background-color: rgb(93, 93, 93);
+  color: azure;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.nxt-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  width: 100%;
+}
+
+
+
+/*score and score counter*/
+.scoreCountertext{
+  font-size: medium;
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 5px;
+
+}
+.score-ans-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+
+}
+.score-display{
+margin-top: 3%;
+height: 15px;
+display: flex;
+justify-content: center;
+align-items: last baseline;
+}
+.tellAnsw{
+  color: #f44336;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tellAnsr{
+  color: #33ff00;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+/*finish attempt*/
+.finish-attempt{
+  width: 100%;
+  max-width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  border-radius: 10px;
+}
+.finishAt{
+width: 130px;
+height: 30px;
+cursor: pointer;
+margin-left:20px ;
+border-radius: 8px;
+border: 1.2px solid rgb(0, 0, 0);
+}
+.finishAt:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(70, 70, 231);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    font-weight: 00;
+}
+.rmcar{
+  cursor: pointer;
+  width: 60px;
+  height: 50px;
+}
+.rmcar:hover{
+    transform: translateY(-0.15rem);
+    transition: transform 150ms;
+}
+.headText{
+  font-size: 20px;
+  font-family: cursive;
+  cursor: pointer;
+}
+.headText:hover{
+    transform: translateY(-0.15rem);
+    transition: transform 150ms;
+}
+
+
+/*final page*/
+.final-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.finishp1w{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #33ff00;
+  font-weight: bold;
+}
+.finishp1l{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #f44336;
+  font-weight: bold;
+}
+.finishp2{
+  font-size: 20px;
+}
+.atp{
+cursor: pointer;
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+}
+.atp:hover{
+    color: rgb(130, 21, 231);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.atp2w{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: #33ff00;
+}
+.atp2l{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: #f44336;
+}
+.finishb{
+width: 150px;
+height: 40px;
+cursor: pointer;
+margin-top: 12px;
+margin-left:20px ;
+border-radius: 8px;
+border: 1.2px solid rgb(0, 0, 0);
+}
+.finishb:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(70, 70, 231);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    font-weight: 00;
+}
