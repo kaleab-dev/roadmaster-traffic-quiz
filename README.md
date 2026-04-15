@@ -10,7 +10,8 @@ Built using HTML, CSS, and JavaScript.
 - Helps users prepare for driving theory tests
 
 ## Inspiration
-This project was inspired by my interest in road safety and my personal experience with driving education. It also connects to my journey of overcoming fear related to driving.
+This project was born at the intersection of a personal crisis and a professional mission. After a severe car accident that required surgery, I faced a long recovery and the psychological challenge of overcoming my fear of driving.
+That experience transformed road safety from an interest into a personal mandate. I realized the best way to process my trauma was to prevent it for others. I am building this software to bridge gaps in driver education, using technology to create more informed, confident drivers and ensure others don't have to face what I did.
 
 ## How to Use
 1. Open `index.html` in your browser.
