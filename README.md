@@ -1,7 +1,7 @@
 # RoadMaster – Traffic Signs & Rules Quiz
 
 RoadMaster is an interactive quiz website designed to help learners test their knowledge of traffic signs and road rules.  
-Built using HTML, CSS, and JavaScript.
+Built using HTML, CSS, and JavaScript. Currently in active development
 
 ## Features
 - Multiple-choice quizzes
